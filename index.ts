@@ -1,11 +1,11 @@
-import {prompt} from "enquirer";
-const response = await prompt({
-    type:'String',
-    name:"shopping",
-    message:"Which item you want to purchase?",
-})
+import inquirer from "inquirer";
+const response = await inquirer.prompt([{
+   type: 'String',
+   name: "shopping",
+   message: "Which item you want to purchase?",
+}])
 
-console.log(response['shopping']); 
+console.log(response);
 
 //let shopping=['Fruits','Vegetables','Groceries']
 
@@ -13,10 +13,10 @@ console.log(response['shopping']);
 //console.log('Banana,Apple,Peach,Orange,Watermelon');
 //}
 //else if(a.shopping=='Vegetables'){
-   //console.log('Potatos,Tomatos,Ladyfinger,Carrot');
+//console.log('Potatos,Tomatos,Ladyfinger,Carrot');
 //}
 //else if(a.shopping=='Groceries'){
-   //console.log('Egg,Cheese,Butter,Bread,Milk');
+//console.log('Egg,Cheese,Butter,Bread,Milk');
 //}
 //else{
-   // console.log('Not Available');
+// console.log('Not Available');
