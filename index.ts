@@ -1,11 +1,11 @@
 import inquirer from "inquirer";
-const response = await inquirer.prompt([{
+const a = await inquirer.prompt([{
    type: 'String',
    name: "shopping",
    message: "Which item you want to purchase?",
 }])
 
-console.log(response);
+console.log(a.shopping);
 
 //let shopping=['Fruits','Vegetables','Groceries']
 
